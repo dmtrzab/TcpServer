@@ -1,0 +1,19 @@
+{
+  "label": "build",
+  "type": "shell",
+  "command": "g++",
+  "args": [
+    "-g",
+    "TcpServer.cpp",
+    "TcpServerClient.cpp",
+    "main.cpp",
+    "-o",
+    "server.exe",
+    "-lws2_32"
+  ],
+  "group": {
+    "kind": "build",
+    "isDefault": true
+  },
+  "problemMatcher": "$gcc"
+}
